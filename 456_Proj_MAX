@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Original image and dimensions
-image_path = r'C:\Users\cynna\OneDrive\Desktop\^Fall 2023^\MTH 456\cat.jpg'
+image_path = r'C:\Users\cynna\OneDrive\Desktop\^Fall 2023^\MTH 456\cat.jpg' # Input your own file path
 image_array = plt.imread(image_path)
 height, width, channels = image_array.shape
 
