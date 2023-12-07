@@ -1,0 +1,22 @@
+import os
+from PIL import Image
+
+# Replace 'path_to_your_image.jpg' with the path to your image file
+image_path = r'C:\Users\cynna\OneDrive\Desktop\^Fall 2023^\MTH 456\456_Proj_OG_IMAGE.png' # Insert your own file path
+
+# Get the size of the image file in bytes
+file_size_bytes = os.path.getsize(image_path)
+
+# Open the image to get its dimensions
+image = Image.open(image_path)
+width, height = image.size
+
+# Calculate the total number of pixels in the image
+total_pixels = width * height
+
+# Calculate the bits per pixel (BPP)
+bits_per_pixel = file_size_bytes * 8 / total_pixels
+
+# Print image size and bits per pixel (BPP)
+print(f"Image Size: {width} x {height} pixels")
+print(f"Bits per Pixel (BPP): {bits_per_pixel}")
